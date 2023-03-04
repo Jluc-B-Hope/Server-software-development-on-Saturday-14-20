@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block headers %}
+    <title>HOME PAGE</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Poppins:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+{% block content %}
+    {% include 'header.html' %}
+    {% include 'online_shop/how-it-works.html' %}
+    <section>
+        <h1>ABOUT Page</h1>
+    </section>
+    {% include 'footer.html' %}
+{% endblock %}

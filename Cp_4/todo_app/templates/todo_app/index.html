@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block headers %}
+    <title>HOME PAGE</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Poppins:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'online_shop/style/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+{% block content %}
+    {% include 'header.html' %}
+    {% include 'online_shop/how-it-works.html' %}
+    <section class="categories">
+      {% for category in categories %}
+        <div class="category">
+            <a class="title" href="/categories/{{ category.id }}">
+                {{ category.name }}
+            </a>
+            {% if category.description|length < 20 %}
+                {{ category.description }}
+            {% endif %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <section class = "gallery">
+      <div class = "gallery-item item-1">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-2">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-3">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-4">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-5">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-6">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+    </section>
+    <section class = "accomplishments">
+        <h1 class="main_text">My Accomplishment</h1>
+        <div class="acc-items">
+          <div class="acc-item">
+              <i class="acc-icon icon-paperplane"></i>
+              <h2 class="acc-count">0</h2>
+              <h3 class="description">Projects</h3>
+          </div>
+          <div class="acc-item">
+            <i class="acc-icon icon-cup"></i>
+            <h2 class="acc-count">0</h2>
+            <h3 class="description">Cups of coffee</h3>
+          </div>
+          <div class="acc-item">
+            <i class="acc-icon icon-user2"></i>
+            <h2 class="acc-count">0</h2>
+            <h3 class="description">Satisfied Clients</h3>
+          </div>
+        </div>
+    </section>
+    <section class = "blog">
+      <div class="blog-main">
+        <h1 class="blog-main__main">Recent Blog</h1>
+        <p class="blog-main__para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+      </div>
+      <div class="blog-content">
+        <div class="content-public">
+          <div class="public__info">
+            <div class="reviews">
+              <i class="icon-user2"></i>
+              <h5 class = "reviews__reviewer">by: Mark Harris</h5>
+              <i class="icon-bubble3"></i>
+              <h5 class = "reviews__comments">10</h5>
+            </div>
+            <h3 class="public__name">Making A Website from scratch</h3>
+          </div>
+          <div class = "reviews__img reviews__img-1"></div>
+          <div class="public-desc">
+            <h1 class="public-desc__day">10 <span class = "month">MAR</span></h1>
+            <h5 class="public-desc__para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</h5>
+          </div>
+        </div>
+        <div class="content-public">
+          <div class="public__info">
+            <div class="reviews">
+              <i class="icon-user2"></i>
+              <h5 class = "reviews__reviewer">by: Mark Harris</h5>
+              <i class="icon-bubble3"></i>
+              <h5 class = "reviews__comments">10</h5>
+            </div>
+            <h3 class="public__name">Making A Website from scratch</h3>
+          </div>
+          <div class = "reviews__img reviews__img-2"></div>
+          <div class="public-desc">
+            <h1 class="public-desc__day">10 <span class = "month">MAR</span></h1>
+            <h5 class="public-desc__para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</h5>
+          </div>
+        </div>
+        <div class="content-public">
+          <div class="public__info">
+            <div class="reviews">
+              <i class="icon-user2"></i>
+              <h5 class = "reviews__reviewer">by: Mark Harris</h5>
+              <i class="icon-bubble3"></i>
+              <h5 class = "reviews__comments">10</h5>
+            </div>
+            <h3 class="public__name">Making A Website from scratch</h3>
+          </div>
+          <div class = "reviews__img reviews__img-3"></div>
+          <div class="public-desc">
+            <h1 class="public-desc__day">10 <span class = "month">MAR</span></h1>
+            <h5 class="public-desc__para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-blog">
+      <div class="reviews-title">My Clients Says</div>
+      <div class="reviews-contents">
+        <div class="reviews-content__inner">
+          <div class="reviews-content-photo content-photo-1"></div>
+          <div class="reviews-content-quote">
+            <h3 class="content-quote__name">Mark Smith</h3>
+            <p class="content-quote__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque fugit officia quae quidem velit.</p>
+          </div>
+        </div>
+        <div class="reviews-content__inner">
+          <div class="reviews-content-photo content-photo-2"></div>
+          <div class="reviews-content-quote">
+            <h3 class="content-quote__name">Tony Stark</h3>
+            <p class="content-quote__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem explicabo fugit, labore maiores quos?</p>
+          </div>
+        </div>
+        <div class="reviews-content__inner">
+          <div class="reviews-content-photo content-photo-3"></div>
+          <div class="reviews-content-quote">
+            <h3 class="content-quote__name">John Griffin</h3>
+            <p class="content-quote__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur dicta eveniet illum impedit iusto!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="pricing-header">
+        <h1 class="pricing-header__main-title">Pricing</h1>
+        <p class="pricing-header__description">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+      </div>
+      <div class="pricing-options">
+        <div class="pricing-option">
+          <h1 class="pricing-option__name">Starter</h1>
+          <div class="pricing-option-price">
+            <div class="pricing-option-price-top">
+              <span class="currency">$</span>
+              <span class="amount">9</span>
+            </div>
+            <span class="duration">per month</span>
+          </div>
+          <p class="pricing-option__description">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <button class="pricing-option__select">Select Plan</button>
+        </div>
+        <div class="pricing-option">
+          <h1 class="pricing-option__name">Basic</h1>
+          <div class="pricing-option-price">
+            <div class="pricing-option-price-top">
+              <span class="currency">$</span>
+              <span class="amount">27</span>
+            </div>
+            <span class="duration">per month</span>
+          </div>
+          <p class="pricing-option__description">
+            Far far away, behind the word mountains, far from the countries Vokalia and Cons   ntia, there live the blind texts.
+          </p>
+          <button class="pricing-option__select">Select Plan</button>
+        </div>
+        <div class="pricing-option">
+          <h1 class="pricing-option__name">Pro</h1>
+          <div class="pricing-option-price">
+            <div class="pricing-option-price-top">
+              <span class="currency">$</span>
+              <span class="amount">74</span>
+            </div>
+            <span class="duration">per month</span>
+          </div>
+          <p class="pricing-option__description">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <button class="pricing-option__select">Select Plan</button>
+        </div>
+        <div class="pricing-option">
+          <h1 class="pricing-option__name">Unlimited</h1>
+          <div class="pricing-option-price">
+            <div class="pricing-option-price-top">
+              <span class="currency">$</span>
+              <span class="amount">140</span>
+            </div>
+            <span class="duration">per month</span>
+          </div>
+          <p class="pricing-option__description">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <button class="pricing-option__select">Select Plan</button>
+        </div>
+      </div>
+    </section>
+    {% include 'footer.html' %}
+    <div class="modal" id = "modal" onclick="hideModal(event)">
+        <div class="modal__main-content">
+          <div class="modal__exit" id = "exit" onclick="hideModal(event)">X</div>
+          <div class="modal__content">
+            <h1 class="modal-content__title">Registration Form</h1>
+            <div class="modal-content__field">
+              <h2 class="modal-content-field__name">Email: </h2>
+              <input type="text" class="modal-content__email" placeholder="Enter your email here...">
+            </div>
+            <div class="modal-content__field">
+              <h2 class="modal-content-field__name">Password:</h2>
+              <input type="password" class="modal-content__password" placeholder="Create a password">
+            </div>
+            <div class="modal-content__field">
+              <h2 class="modal-content-field__name">Password(again):</h2>
+              <input type="password" class="modal-content__password" placeholder="Repeat your password">
+            </div>
+            <button type="submit" class="modal-content__submit">Sign Up</button>
+          </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+      var DJANGO_BASE_URL = '{{ STATIC_URL }}';
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="{% static 'online_shop/script/slick.min.js' %}"></script>
+    <script src = "{% static 'online_shop/script/script.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'online_shop/script/gallery-hover.js' %}"></script>
+    <script src = "{% static 'online_shop/script/acc.js' %}"></script>
+    <script src = "{% static 'online_shop/script/modal.js' %}"></script>
+    <script src = "{% static 'online_shop/script/mobile.js' %}"></script>
+{% endblock %}

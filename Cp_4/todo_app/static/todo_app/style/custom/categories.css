@@ -1,0 +1,17 @@
+.categories {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.category {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+}
+

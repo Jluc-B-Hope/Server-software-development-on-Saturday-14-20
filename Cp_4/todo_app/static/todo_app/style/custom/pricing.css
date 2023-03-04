@@ -1,0 +1,131 @@
+.pricing{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-header{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pricing-header__main-title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pricing-header__description{
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 300;
+    color: gray;
+}
+
+.pricing-options{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-option{
+    padding: 20px 10px;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+}
+
+.pricing-option__name{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.pricing-option-price{
+    width: 80%;
+    height: 100px;
+    color: #a2dc4d;
+    font-size: 72px;
+    line-height: 50px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.pricing-option-price-top{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.currency{
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: start;
+}
+
+.duration{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    color: #888f94;
+}
+
+.pricing-option__description{
+    font-weight: 300;
+    line-height: 1.7;
+    color: gray;
+    font-size: 16px;
+}
+
+.pricing-option__select{
+    border: 2px solid #a2dc4d;
+    width: 60%;
+    min-height: 40px;
+    text-align: center;
+    background: #a2dc4d;
+    color: #fff;
+    font-size: 14px;
+}
+@media (max-width: 768px){
+    .pricing{
+        height: auto;
+        margin: 10% 0;
+    }
+    .pricing-header{
+        width: 280px;
+        margin: 30px 0;
+    }
+    .pricing-header__main-title{
+        margin-bottom: 30px;
+    }
+    .pricing-option{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+    .pricing-option__description{
+        width: 60%;
+        margin: 20px;
+    }
+}

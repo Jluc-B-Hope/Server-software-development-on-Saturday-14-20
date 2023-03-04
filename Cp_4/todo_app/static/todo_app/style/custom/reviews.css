@@ -1,0 +1,133 @@
+.reviews-blog{
+    width: 100%;
+    min-height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../../images/reviews_bg.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.reviews-title{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.reviews-contents{
+    width: 100%;
+    min-height: 400px;
+    height: 80%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-content__inner{
+    width: 30%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reviews-content-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: url('../../images/person-1.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content-photo-2{
+    background: url('../../images/person-2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content-photo-3{
+    background: url('../../images/person-3.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.reviews-content-quote{
+    width: 100%;
+    height: calc(100% - 100px);
+    min-height: 200px;
+    border-radius: 5px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-quote__name{
+    width: 100%;
+    height: 30%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-quote__para{
+    width: 90%;
+    height: 70%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0 5%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #999999;
+}
+
+@media (max-width: 768px) {
+    .reviews-content-quote{
+        height: 200px;
+    }
+    .content-quote__para{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .reviews-title{
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    .reviews-content-quote{
+        padding: 10px;
+     }
+    .content-quote__name{
+        font-size: 16px;
+    }
+    .content-quote__para{
+        font-size: 14px;
+    }
+    .reviews-contents{
+        flex-direction: column;
+    }
+    .reviews-content__inner{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .reviews-blog{
+        min-height: 150vh;
+    }
+}
+
+
+

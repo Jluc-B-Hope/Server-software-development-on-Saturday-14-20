@@ -1,0 +1,208 @@
+.footer{
+    width: 100%;
+    height: 90vh;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #FFF;
+    background: #232525;
+    box-sizing: border-box;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer-top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding-left: 10%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-top-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    align-items: center;
+}
+.footer-top-left__email{
+    width: 60%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #999;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+.footer-top-left__submit{
+    background: #a2dc4d;
+    color: #FFF;
+    width: 30%;
+    height: 50px;
+    min-width: 150px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid #a2dc4d;
+    font-size: 16px;
+}
+.footer-top-right{
+    width: 60%;
+    height: 100%;
+    background: #FFF;
+    color: #333;
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 40px;
+}
+.footer-main{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10% 5% 10% 10%;
+}
+.footer-main-inform__title{
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e6e6e6;
+    font-weight: 700;
+}
+.footer-bottom{
+    width: 100%;
+    font-size: 14px;
+    height: 10%;
+    min-height: 100px;
+    text-align: center;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-main-inform{
+    width: 23%;
+}
+
+.footer-main-inform__description{
+    width: 80%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+.footer-main-social__link{
+    color: #a2dc4d;;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.footer-main-inform__link{
+    margin-bottom: 5px;
+}
+.footer-main__information{
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+}
+.footer-main__inform__link{
+    height: 25px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.footer-main__second-icon{
+    color: #a2dc4d;
+    margin-right: 5px;
+}
+.footer-main-blog{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.footer-main-blog-img{
+    display: block;
+    margin-right: 20px;
+    width: 70px;
+    height: 60px;
+    background: url(../../images/blog-1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.footer-blog-2{
+    background: url("../../images/blog-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.footer-blog-3{
+    background: url("../../images/blog-3.jpg") no-repeat center center;
+    background-size: cover;
+}
+.footer-blog-description__date{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-main-inform__address{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+.footer-inform__contact{
+    margin-bottom: 10px;
+}
+.footer-inform__third-icon{
+    color: #a2dc4d;
+    margin-right: 10px;
+}
+
+.gray{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px){
+    .footer{
+        height: auto;
+    }
+    .footer-top{
+        flex-wrap: wrap;
+        height: 250px;
+        padding: 0 10%;
+        margin: 5% 0;
+    }
+    .footer-top-left{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .footer-top-left__email{
+        width: 60%;
+    }
+    .footer-top-left__submit{
+        width: 40%;
+    }
+    .footer-top-right{
+        width: 100%;
+        height: 100px;
+    }
+    .footer-main-inform{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 425px){
+    .footer-top-right{
+        font-size: 18px;
+    }
+    .footer-top-left__email{
+        width: 100%;
+    }
+    .footer-top-left__submit{
+        width: 100%;
+    }
+}

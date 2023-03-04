@@ -1,0 +1,55 @@
+.accomplishments{
+    padding: 50px 0;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../../images/acc.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_text{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.acc-items{
+    width: 70%;
+    min-height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.acc-item{
+    margin: 20px 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acc-icon{
+    font-size: 50px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.acc-count{
+    font-size: 40px;
+    font-weight: 700;
+    color: #a2dc4d;
+    margin-bottom: 20px;
+}
+.description{
+    width: 300px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+@media(max-width: 768px) {
+    .main_text{
+        font-size: 24px;
+    }
+}
