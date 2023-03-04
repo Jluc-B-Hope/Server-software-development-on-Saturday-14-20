@@ -37,7 +37,8 @@ def get_todo_list(pk):
 
 
 @csrf_exempt
-def todo_list_handler(request, pk):
+def \
+        _handler(request, pk):
     result = get_todo_list(pk)
 
     if result['status'] == 404:
